@@ -24,14 +24,14 @@ class Container extends React.Component {
         </div>
         <div className="appbody">
           <div className="row">
-            <div className="circle"></div>
-            <div className="circle"></div>
-            <div className="circle"></div>
+            <div className="circle kotori"></div>
+            <div className="circle nico"></div>
+            <div className="circle nozomi"></div>
           </div>
           <div className="row">
-            <div className="circle"></div>
-            <div className="circle"></div>
-            <div className="circle"></div>
+            <div className="circle maki"></div>
+            <div className="circle eli"></div>
+            <div className="circle honoka"></div>
           </div>
         </div>
         <div className="appfooter">
