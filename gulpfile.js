@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     browserify = require('browserify'),
     minifyify = require('minifyify'),
     watchify = require('watchify'),
+    less = require('gulp-less'),
     path = require('path');
 
 var bundler = browserify({
@@ -35,6 +36,14 @@ gulp.task('watch', function () {
     .pipe(gulp.dest('./public/'));
 });
 
-gulp.task('default', ['watch']);
-gulp.task('bundle', ['browserify']);
+gulp.task('less', function () {
+  return gulp.src('./assets/app.less')
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest('./public/assets'));
+});
+
+gulp.task('default', ['watch', 'less']);
+gulp.task('bundle', ['browserify', 'less']);
 gulp.task('spa', ['browserify']);

@@ -42,3 +42,4 @@ jspm_packages
 # App
 public/bundle.js
 public/map.js
+public/assets/app.css
