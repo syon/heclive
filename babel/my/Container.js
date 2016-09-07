@@ -19,7 +19,7 @@ class Container extends React.Component {
     return (
       <div className="root">
         <div className="appheader">
-          <div className="title">App Header</div>
+          <div className="title">HECLIVE</div>
           <div className="subaction">Settings</div>
         </div>
         <div className="appbody">
